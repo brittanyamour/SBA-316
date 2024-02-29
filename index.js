@@ -62,9 +62,9 @@ function buildSubMenu(givenElement, mainLinkName, linksArray) {
   mainEl.classList.add("flex-ctr");
 
 // ============ Article ============
-const bodyText = document.getElementById("article");
+// const bodyText = document.getElementById("article");
 
-bodyText.style.alignContent = "left";
+// bodyText.style.alignContent = "left";
 
 // function generateRepeatedText(text, times) {
 //   return text.repeat(times);
