@@ -62,15 +62,17 @@ function buildSubMenu(givenElement, mainLinkName, linksArray) {
   mainEl.classList.add("flex-ctr");
 
 // ============ Article ============
-const article = document.getElementById(article)
+const bodyText = document.getElementById("article");
 
-function generateRepeatedText(text, times) {
-  return text.repeat(times);
-}
+bodyText.style.alignContent = "left";
 
-window.onload = function() {
-  const repeatedText = generateRepeatedText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 10)
-}
+// function generateRepeatedText(text, times) {
+//   return text.repeat(times);
+// }
+
+// window.onload = function() {
+//   const repeatedText = generateRepeatedText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 10)
+// }
   
   //============= Create top menu =============
   const topMenuEl = document.getElementById("top-menu"); 
@@ -92,7 +94,7 @@ window.onload = function() {
     nav.appendChild(a);
   }
   
-  //============ Part 3 ============
+  //============ // ============
   const subMenuEl = document.getElementById("sub-menu"); //cache subMenuEl
   
   //Set CSS properties
@@ -106,7 +108,7 @@ window.onload = function() {
   
   
   
-  //============== Part 4 =============
+  //============== Create anchor element for links =============
   const topMenuLinks = document.querySelectorAll("#top-menu a"); //cache anchor elements in topMenuEl
     
   function myEventListener(Event) {
@@ -137,7 +139,7 @@ window.onload = function() {
     });
   });
   
-  //============ Part 5 ==============
+  //============ Add event listeners ==============
   
   // Loop through top menu links and attach click event listener
   topMenuLinks.forEach(link => {
